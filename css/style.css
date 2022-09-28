@@ -4,13 +4,15 @@
   --color-secondary: #727272;
   --color-white: #ffffff;
   --bg-color-gray: #eeeff2;
-
+  
   --font-size: 16px;
   --font-primary: "Roboto", sans-serif;
   --letter-spacing: 0.1em;
   --line-height-lg: 1.625;
+  --line-height-sm: 1.2;
 
   --container-main: 1150px;
+  --container-small: 540px;
   --gap: 20px;
   --gap-sm: calc(var(--gap) / 2);
 
@@ -40,9 +42,27 @@ a {
   margin: 0 auto;
 }
 
-.content {
-  max-width: 540px;
+.container--sm {
+  max-width: var(--container-small);
+}
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header-content {
+  max-width: var(--container-small);
+  
 }
 .header {
   padding: 70px 0 141px;
@@ -76,8 +96,7 @@ display: block;
   color: var(--color-primary);
 }
 
-.header-content {
-}
+
 
 .header-content__title {
   font-weight: 500;
@@ -107,16 +126,57 @@ display: block;
   padding: 0.5em 1em;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.main {
+}
+.section {
+}
+.section__title {
+font-weight: 500;
+font-size: 32px;
+line-height: var(--line-height-sm);
+text-align: center;
+margin-bottom: 39px;
+}
+.section__description {
+line-height: var(--line-height-lg);
+text-align: center;
+color: var(--color-secondary);
+}
+.about {
+  padding: 112px 0 90px;
+}
+.about .container {
+  max-width: var(--container-small);
+}
+.experience {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+}
+.experience-item {
+}
+.experience-item__description {
+}
+.experience-item__title {
+}
+.experience-item__text {
+}
+.experience-item__image {
+}
+.process {
+}
+.process__contant {
+}
+.process__title {
+}
+.process__description {
+}
+.process__video {
+}
+.footer {
+  background-color: var(--color-primary);
+}
+.footer__name {
+}
+.footer__copyright {
 }
