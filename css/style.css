@@ -78,7 +78,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   column-gap: 23px;
-  margin-left: calc(0px - var(--gap-sm));
+}
+
+.header-navbar__item:first-of-type .header-navbar__link {
+  padding-left: 0;
 }
 
 .header-navbar__link {
