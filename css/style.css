@@ -78,10 +78,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   column-gap: 23px;
-}
-
-.header-navbar__item:first-of-type .header-navbar__link {
-  padding-left: 0;
+  margin-left: calc(0px - var(--gap-sm));
 }
 
 .header-navbar__link {
@@ -178,6 +175,7 @@ color: var(--color-secondary);
   width: 100%;
   height: 600px;
   margin-bottom: 3px;
+  border: none;
 }
 
 .footer {
